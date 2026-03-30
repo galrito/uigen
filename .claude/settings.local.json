@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "Bash(npm audit:*)",
+      "Bash(node -e \"const p = require\\(''./package.json''\\); console.log\\(''next:'', p.dependencies.next\\); console.log\\(''ai:'', p.dependencies.ai\\);\")",
+      "Bash(npm install:*)",
+      "Bash(grep -r \"from ''ai''\" src/ --include=\"*.ts\" --include=\"*.tsx\" -l)",
+      "Bash(grep -r \"from ''ai''\" src/ --include=\"*.ts\" --include=\"*.tsx\")",
+      "Bash(npm list:*)",
+      "mcp__playwright"
+    ]
+  }
+}
